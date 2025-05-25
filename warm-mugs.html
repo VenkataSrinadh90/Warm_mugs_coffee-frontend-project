@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to  Warm Mugs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+ <link rel="stylesheet" href="warm-mugs.css">
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+
+    <nav>
+      <div class="logo">Warm Mugs</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>Welcome To<br /><span>Warm Mugs</span></h1>
+      <h3>Where Coffee Meets Comfort</h3>
+      <p>
+        Relax with our signature brews and delightful snacks<br />
+        in a warm, cozy setting. Start your day the Rosa way.
+      </p>
+      <button
+        onclick="document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });"
+      >
+        Explore Menu
+      </button>
+    </div>
+
+    <div id="menu" class="menu-preview">
+      <h3>Popular Picks</h3>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img
+            src="https://www.chriscoffee.com/cdn/shop/articles/how-to-make-a-latte-with-esspresso-machine.jpg?v=1693399852"
+            alt="Caramel Latte"
+          />
+          <h4>Cappuccino</h4>
+          <p>The perfect balance of flavor</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://images.ricardocuisine.com/services/recipes/croissant1.jpg"
+            alt="Butter Croissant"
+          />
+          <h4>Butter Croissant</h4>
+          <p>Flaky and buttery, perfect with coffee.</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://parachutecoffee.com/cdn/shop/articles/mocha_cookie_crumble_frappuccino_800x.jpg?v=1674577498"
+            alt="Mocha Frappe"
+          />
+          <h4>Cookie Crumble Frappuccino</h4>
+          <p>Crumbly good, refreshingly sweet</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewMW3FO7NHUkKl93XMqRcBDnaVmaS2FdPCw&s"
+            alt="Grilled Panini"
+          />
+          <h4>Grilled Panini</h4>
+          <p>Hot and cheesy, filled with veggies and love.</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://static01.nyt.com/images/2022/02/12/dining/JT-Chocolate-Chip-Cookies/JT-Chocolate-Chip-Cookies-jumbo.jpg"
+            alt="Chocolate Chip Cookie"
+          />
+          <h4>Chocolate Chip Cookie</h4>
+          <p>Soft, chewy, and packed with chocolate.</p>
+        </div>
+
+        <!-- New menu items -->
+        <div class="menu-item">
+          <img
+            src="https://www.shutterstock.com/image-photo/close-espresso-coffee-machine-dripping-260nw-2508395285.jpg"
+            alt="Espresso Shot"
+          />
+          <h4>Espresso Shot</h4>
+          <p>Strong and bold, pure coffee essence.</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://www.jessicagavin.com/wp-content/uploads/2020/07/avocado-toast-20-1200.jpg"
+            alt="Avocado Toast"
+          />
+          <h4>Avocado Toast</h4>
+          <p>Creamy avocado on toasted artisan bread.</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7o4fJt7zPSKEka6KzYsZhq6dMGZZcacZlwCTc3BfyQ1bco4IXX9Q0EcVDMRHc9fZxZeo&usqp=CAU"
+            alt="Matcha Latte"
+          />
+          <h4>Matcha Latte</h4>
+          <p>Earthy green tea blended with steamed milk.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

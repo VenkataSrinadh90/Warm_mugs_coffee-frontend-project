@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Syne", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background: url("./rose\ coffee\ shop\ background.jpg") no-repeat center
+    center/cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: rgba(0, 0, 0, 0.512);
+  backdrop-filter: blur(6px); /* optional: adds a nice blur effect */
+}
+
+nav .logo {
+  font-family: "Playfair Display", serif , cursive;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #fef1db; /* pink */
+  text-shadow: 2px 2px 0 #000, /* black shadow */ -1px -1px 0 #000,
+    1px -1px 0 #000, -1px 1px 0 #000;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f0c987;
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 80px;
+  height: 100vh;
+  width: 60%;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-family: "Playfair Display", serif;
+  color: #f0c987;
+  margin-bottom: 20px; /* more space under h1 */
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  color: #ff4da6;
+  font-size: 70px;
+}
+
+.hero h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.hero button {
+  background: #f0c987;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #e1b760;
+}
+
+.menu-preview {
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.menu-preview h3 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #5a3e2b;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 in a row */
+  gap: 30px;
+  padding: 0 40px;
+}
+.menu-item {
+  background: #f9f5f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: scale(1); /* default scale */
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.menu-item h4 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+
+.menu-item p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    width: 80%;
+    padding-left: 40px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 15px 30px;
+  }
+  .hero {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 40px;
+    background-color: #333333cd;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
